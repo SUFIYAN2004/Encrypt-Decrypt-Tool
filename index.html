@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt/Decrypt Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-200">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg">
+        <h1 class="text-xl font-semibold mb-4">Encrypt/Decrypt Tool</h1>
+        <textarea id="inputText" class="w-full h-32 p-2 border border-gray-300 rounded mb-4" placeholder="Enter text here..."></textarea>
+        <button onclick="encryptText()" class="bg-blue-500 text-white px-4 py-2 rounded mr-2">Encrypt</button>
+        <button onclick="decryptText()" class="bg-green-500 text-white px-4 py-2 rounded mr-2">Decrypt</button>
+        <button onclick="copyToClipboard()" class="bg-gray-500 text-white px-4 py-2 rounded">Copy</button>
+        <textarea id="outputText" class="w-full h-32 p-2 border border-gray-300 rounded mt-4" placeholder="Output will appear here..."></textarea>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
